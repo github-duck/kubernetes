@@ -1026,3 +1026,9 @@ spec:
   selector:
     name: nginx
 EOF
+
+dashboard
+kubectl create clusterrolebinding serviceaccount-cluster-admin --clusterrole=cluster-admin --user=system:serviceaccount:kubernetes-dashboard:kubernetes-dashboard
+
+
+
